@@ -5,6 +5,7 @@
     <div id="infohead">
         <h1>{{ term.label }}</h1>
         <div class="infotype">A Schema.org {{ TERMTYPE }}</div>
+        <div class="google-public-stats-badge-container" data-uri="{{ term.uri }}"></div>
         <!-- Pending/retired/term in section -->
         {% if term.superseded %}<br/><em><strong>Note:</strong> This term has been <a href="#supersededby">superseded</a>.</em>{% endif %}
         {% if term.pending %}<br/><em>This term is in the "new" area - implementation feedback and adoption from applications and websites can help improve our definitions.</em>
